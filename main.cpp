@@ -103,7 +103,7 @@ int main(int argc, char *argv[])
 
 		cv::imshow("MeanShiftTracker Demo", img);
 
-		char c = cv::waitKey(1);
+		char c = cv::waitKey(25);
 		if (c == 27)
 			break;
 
