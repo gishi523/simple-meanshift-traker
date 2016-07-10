@@ -21,7 +21,7 @@ $ make
 ```
 
 ## 実行
-./sample [input movie]
+./simple-meanshift-traker [input movie]
 
 ## Author
 gishi523
