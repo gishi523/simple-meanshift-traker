@@ -1,22 +1,27 @@
-Name
-====
+simple-meanshift-traker
 
-Overview
+## 概要
+Mean-shift Trackingの単純な実装例です
 
-## Description
-
-## Demo
-
-## VS. 
+## 特徴
+- 物体のHue成分をもとに追跡
+- 追跡窓サイズは固定
 
 ## Requirement
+OpenCVが必要です
 
-## Usage
+## ビルド
+```
+$ git clone 
+$ cd simple-meanshift-traker
+$ mkdir build
+$ cd build
+$ cmake ../
+$ make
+```
 
-## Install
-
-## Contribution
-
-## Licence
+## 実行
+./sample [input movie]
 
 ## Author
+gishi523
