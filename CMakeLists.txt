@@ -9,5 +9,5 @@ if (CMAKE_COMPILER_IS_GNUCXX)
 	set(CMAKE_CXX_FLAGS "-std=c++11 -Wall -O3")
 endif (CMAKE_COMPILER_IS_GNUCXX)
 
-add_executable(sample ${srcs})
-target_link_libraries(sample ${OpenCV_LIBS})
+add_executable(simple-meanshift-traker ${srcs})
+target_link_libraries(simple-meanshift-traker ${OpenCV_LIBS})
