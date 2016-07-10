@@ -1,7 +1,7 @@
 simple-meanshift-traker
 
 ## 概要
-Mean-shift Trackingの単純な実装例です
+Mean-shift Trackingの簡単な実装例です
 
 ## 特徴
 - 物体のHue成分をもとに追跡
@@ -12,7 +12,7 @@ OpenCVが必要です
 
 ## ビルド
 ```
-$ git clone 
+$ git clone https://github.com/gishi523/simple-meanshift-traker.git
 $ cd simple-meanshift-traker
 $ mkdir build
 $ cd build
