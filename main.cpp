@@ -24,18 +24,18 @@ static void onMouse(int event, int x, int y, int, void*)
 
 	switch (event)
 	{
-		case cv::EVENT_LBUTTONDOWN:
-			origin = cv::Point(x, y);
-			window = cv::Rect(x, y, 0, 0);
-			selectObject = true;
-			break;
-		case cv::EVENT_LBUTTONUP:
-			selectObject = false;
-			if (window.width > 0 && window.height > 0)
-				trackObject = -1;
-			break;
-		default:
-			break;
+	case cv::EVENT_LBUTTONDOWN:
+		origin = cv::Point(x, y);
+		window = cv::Rect(x, y, 0, 0);
+		selectObject = true;
+		break;
+	case cv::EVENT_LBUTTONUP:
+		selectObject = false;
+		if (window.width > 0 && window.height > 0)
+			trackObject = -1;
+		break;
+	default:
+		break;
 	}
 };
 
@@ -62,7 +62,7 @@ int main(int argc, char *argv[])
 	cv::namedWindow("MeanShiftTracker Demo");
 	cv::setMouseCallback("MeanShiftTracker Demo", onMouse);
 
-	while(true)
+	while (true)
 	{
 		if (!paused) {
 			cap >> frame;
@@ -107,19 +107,19 @@ int main(int argc, char *argv[])
 		if (c == 27)
 			break;
 
-		switch(c)
+		switch (c)
 		{
-			case 'b':
-				backprojMode = !backprojMode;
-				break;
-			case 't':
-				trackObject = 0;
-				break;
-			case 'p':
-				paused = !paused;
-				break;
-			default:
-				break;
+		case 'b':
+			backprojMode = !backprojMode;
+			break;
+		case 't':
+			trackObject = 0;
+			break;
+		case 'p':
+			paused = !paused;
+			break;
+		default:
+			break;
 		}
 	}
 
