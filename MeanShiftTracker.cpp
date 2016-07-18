@@ -141,8 +141,6 @@ void MeanShiftTracker::start(const cv::Mat& img, const cv::Rect& window)
 	int histSize = 64;
 	float range[] = { 0, 180 };
 	calcHist(hue, mask, hist_, histSize, range);
-
-	window_ = window;
 }
 	
 int MeanShiftTracker::update(const cv::Mat& img, cv::Rect& window)
